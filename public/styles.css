@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+  
+h1 {
+    color:indianred
+}
+  
+a {
+    color: teal;
+    text-decoration: none;
+    margin-right: 15px;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+  
+button {
+    background-color: teal;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: rgb(1, 94, 94);
+}
+  
+/* Container for the form and content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+  
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+  
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+  
+form input[type="date"], form input[type="number"] {
+    width: 200px;
+}
+  
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+  
+/* Book list styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+ul li {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+ul li h2 {
+    margin-top: 0;
+}
+  
+ul li img {
+    max-width: 100px;
+    margin-right: 20px;
+    float: left;
+}
+  
+ul li p {
+    margin: 10px 0;
+}
+  
+ul li a {
+    display: inline-block;
+    margin-top: 10px;
+}
+  
+ul li form {
+    display: inline;
+}
+  
+ul li form button {
+    margin-left: 10px;
+}
+  
+.link-wrapper {
+    margin-bottom: 20px;
+}

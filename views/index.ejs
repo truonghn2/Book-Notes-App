@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Library</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Book Library</h1>
+
+  <a href="/add">Add New Book</a>
+
+  <!--List of books-->
+  <ul>
+    <% books.forEach(book => { %>
+      <li>
+        <h2><%= book.title %> by <%= book.author %></h2>
+        <img src="<%= book.cover_url %>" alt="Book Cover">
+        <p>Rating: <%= book.rating %>/10</p>
+        <p>Review: <%= book.review %></p>
+        <p>Read on: <%= book.read_date %></p>
+
+        <!--Links to edit or delete the book-->
+        <a href="/edit/<%= book.id %>">Edit</a>
+        <form action="/delete/<%= book.id %>" method="POST">
+          <button type="submit">Delete</button>
+        </form>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
